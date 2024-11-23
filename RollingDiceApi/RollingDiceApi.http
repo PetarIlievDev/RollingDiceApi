@@ -1,0 +1,6 @@
+@RollingDiceApi_HostAddress = http://localhost:5095
+
+GET {{RollingDiceApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

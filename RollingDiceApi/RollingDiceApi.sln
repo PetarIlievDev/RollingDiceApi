@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi", "RollingDiceApi.csproj", "{67F39527-2E38-4294-85E7-2312FA710D35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi.Services", "..\RollingDiceApi.Services\RollingDiceApi.Services.csproj", "{5DB0407D-C564-44E5-948A-777229B579EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.DataAccess", "..\RollingDiceApi.DataAccess\RollingDiceApi.DataAccess.csproj", "{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.Repositories", "..\RollingDiceApi.Repositories\RollingDiceApi.Repositories.csproj", "{EADDE408-58D3-429A-B621-579FB6EBD5B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.Helpers", "..\RollingDiceApi.Helpers\RollingDiceApi.Helpers.csproj", "{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67F39527-2E38-4294-85E7-2312FA710D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F39527-2E38-4294-85E7-2312FA710D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F39527-2E38-4294-85E7-2312FA710D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F39527-2E38-4294-85E7-2312FA710D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB0407D-C564-44E5-948A-777229B579EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB0407D-C564-44E5-948A-777229B579EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB0407D-C564-44E5-948A-777229B579EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB0407D-C564-44E5-948A-777229B579EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADDE408-58D3-429A-B621-579FB6EBD5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADDE408-58D3-429A-B621-579FB6EBD5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADDE408-58D3-429A-B621-579FB6EBD5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADDE408-58D3-429A-B621-579FB6EBD5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F9EDC0F-92E2-4897-859E-CF7B205B2C24}
+	EndGlobalSection
+EndGlobal
