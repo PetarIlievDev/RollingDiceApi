@@ -7,11 +7,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi", "RollingDi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi.Services", "..\RollingDiceApi.Services\RollingDiceApi.Services.csproj", "{5DB0407D-C564-44E5-948A-777229B579EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.DataAccess", "..\RollingDiceApi.DataAccess\RollingDiceApi.DataAccess.csproj", "{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi.DataAccess", "..\RollingDiceApi.DataAccess\RollingDiceApi.DataAccess.csproj", "{00B42474-5FFD-4A9F-9264-4FB7D82B9AD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.Repositories", "..\RollingDiceApi.Repositories\RollingDiceApi.Repositories.csproj", "{EADDE408-58D3-429A-B621-579FB6EBD5B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi.Repositories", "..\RollingDiceApi.Repositories\RollingDiceApi.Repositories.csproj", "{EADDE408-58D3-429A-B621-579FB6EBD5B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.Helpers", "..\RollingDiceApi.Helpers\RollingDiceApi.Helpers.csproj", "{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollingDiceApi.Helpers", "..\RollingDiceApi.Helpers\RollingDiceApi.Helpers.csproj", "{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8476BFF0-9A56-4EEB-8E99-3F6DA6A1AD83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{690862E0-846A-4E2E-B5F9-708C1CD3B872}"
+	ProjectSection(SolutionItems) = preProject
+		..\Tests\Unit\CodeCoverage.runsettings = ..\Tests\Unit\CodeCoverage.runsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollingDiceApi.Services.Tests", "..\Tests\Unit\RollingDiceApi.Services.Tests\RollingDiceApi.Services.Tests.csproj", "{662A42A1-7676-48B2-B0EE-F4DBB2A743B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +48,17 @@ Global
 		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8EE6A8D-DCF0-4F68-B212-6DAA2BB50243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662A42A1-7676-48B2-B0EE-F4DBB2A743B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662A42A1-7676-48B2-B0EE-F4DBB2A743B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662A42A1-7676-48B2-B0EE-F4DBB2A743B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662A42A1-7676-48B2-B0EE-F4DBB2A743B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{690862E0-846A-4E2E-B5F9-708C1CD3B872} = {8476BFF0-9A56-4EEB-8E99-3F6DA6A1AD83}
+		{662A42A1-7676-48B2-B0EE-F4DBB2A743B5} = {690862E0-846A-4E2E-B5F9-708C1CD3B872}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F9EDC0F-92E2-4897-859E-CF7B205B2C24}
