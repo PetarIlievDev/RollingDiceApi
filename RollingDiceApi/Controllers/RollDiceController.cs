@@ -15,20 +15,18 @@
     [Authorize]
     public class RollDiceController(IMapper mapper, IRollDiceService rollDiceService) : Controller
     {
+
         [HttpGet]
-        public async Task<IActionResult> GetAsync(CancellationToken ct)
+        public async Task<IActionResult> GetAsync([FromQuery] RolledDiceGetDataRequest rolledDiceGetDataRequest, CancellationToken ct)
         {
-            ResponseModel<RollDiceServiceResponse> response = new();
+            ResponseModel<RolledDiceGetDataServiceResponse> response = new();
 
             try
             {
                 var claim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
-                var serviceRequest = new RollDiceServiceRequest
-                {
-                    Email = claim?.Value ?? throw new Exception("Email not found")
-                };
-
-                var result = await rollDiceService.RollDiceAsync(serviceRequest, ct);
+                var serviceRequest = mapper.Map<RolledDiceGetDataServiceRequest>(rolledDiceGetDataRequest);
+                serviceRequest.Email = claim?.Value ?? throw new Exception("Email not found");
+                var result = await rollDiceService.GetRolledDiceDataAsync(serviceRequest, ct);
 
                 response.Status = true;
                 response.Message = "success";
@@ -43,17 +41,20 @@
             }
         }
 
-        [HttpPost("GetData")]
-        public async Task<IActionResult> PostAsync([FromBody] RolledDiceGetDataRequest rolledDiceGetDataRequest, CancellationToken ct)
+        [HttpPost]
+        public async Task<IActionResult> PostAsync(CancellationToken ct)
         {
-            ResponseModel<RolledDiceGetDataServiceResponse> response = new();
+            ResponseModel<RollDiceServiceResponse> response = new();
 
             try
             {
                 var claim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
-                var serviceRequest = mapper.Map<RolledDiceGetDataServiceRequest>(rolledDiceGetDataRequest);
-                serviceRequest.Email = claim?.Value ?? throw new Exception("Email not found");
-                var result = await rollDiceService.GetRolledDiceDataAsync(serviceRequest, ct);
+                var serviceRequest = new RollDiceServiceRequest
+                {
+                    Email = claim?.Value ?? throw new Exception("Email not found")
+                };
+
+                var result = await rollDiceService.RollDiceAsync(serviceRequest, ct);
 
                 response.Status = true;
                 response.Message = "success";

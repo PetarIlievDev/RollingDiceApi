@@ -14,8 +14,8 @@
     {
         public async Task<RollDiceServiceResponse> RollDiceAsync(RollDiceServiceRequest request, CancellationToken ct)
         {
-            var dice1 = new Random().Next(1, 6);
-            var dice2 = new Random().Next(1, 6);
+            var dice1 = new Random().Next(1, 7);
+            var dice2 = new Random().Next(1, 7);
             var sum = dice1 + dice2;
 
             var result = await rollDiceRepository.SaveRolledDiceAsync(new RolledDiceData
